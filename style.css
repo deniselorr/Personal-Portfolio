@@ -11,6 +11,7 @@ a {
     text-decoration: none;
     color: #5C270E;
     cursor: pointer;
+    display: flex;
 }
 a:hover {
     color: #F1601C
@@ -18,33 +19,50 @@ a:hover {
 a:active {
     color: #76944E;
 }
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+}
 .main-hero-image {
     width: 100vw;
     height: 644px;
     object-fit: cover;
+    background: url('./asset/mainhero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .horrible-text {
-    color:#5C270E;
-    font-size: 111px;
+    color:#F3F9AD;
+    font-size: 40px;
     text-align: center;
-    width: 1.25 rem;
-    height: 1.25 rem;
     overflow: auto;
-    margin: 20px;
+    margin: 25px;
     font-family: "Montserrat", "Montserrat";
     font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 190px;
 }
 .call-to-action {
  color:#5C270E;
     background-color: #F3F9AD;
-    font-size: 46px;
+    font-size: 20px;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     overflow: scroll;
     margin: 0 auto;
     border-radius: 8px;
     font-family: "Montserrat", "Montserrat";
     font-weight: 550;
+    margin-top: 12px;
+    width: fit-content; 
 }
 .call-to-action:hover {
     cursor: pointer;
@@ -62,11 +80,71 @@ a:active {
 .paragraph-header {
     text-align: center;
     font-size: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
 }
 .paragraph-text {
-    text-align: left;
-    padding-left: 250px;
-    padding-right: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    column-gap: 45px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.paragraph-header {
+    display: flex;
+    flex-direction: column;
+    gap: .75 rem;
+}
+@media screen and (min-width: 320px) {
+    .paragraph-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: justify;
+        column-gap: 45px;
+        padding-right: 200px;
+        padding-left: 200px;
+        margin-bottom: 50px;
+    }
+    .paragraph-text {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5 rem;
+    }
+    .horrible-text {
+        color:#F3F9AD;
+        font-size: 111px;
+        text-align: center;
+        overflow: auto;
+        margin: 25px;
+        font-family: "Montserrat", "Montserrat";
+        font-weight: bold;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50px;
+        padding-top: 130px;
+    }
+    .call-to-action {
+        color:#5C270E;
+        background-color: #F3F9AD;
+        font-size: 40px;
+        text-align: center;
+        padding: 25px;
+        overflow: scroll;
+        margin: 0 auto;
+        border-radius: 8px;
+        font-family: "Montserrat", "Montserrat";
+        font-weight: 550;
+        margin-top: 12px;
+        width: fit-content; 
+    }
 }
 .secondary-hero-image {
     width: 100vw;
@@ -76,10 +154,30 @@ a:active {
 .quote {
     text-align: center;
     font-weight: 450;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.logo-footer {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    font-size: 20;
+    font-weight: 600;
 }
 .copyright {
     text-align: center;
     font-size: 15px;
+    margin-bottom: 70px;
+    margin-top: 25px;
 }
 .page-header {
     text-align: center;
